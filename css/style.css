@@ -5,6 +5,18 @@ body, html, ul {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif; }
 
+h1, h2, h3, h4, p, i {
+  font-weight: 100;
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
 /* landing page style */
 h2 {
   font-size: 45px;
@@ -42,13 +54,10 @@ nav {
   height: 60px; }
 
 li {
-  list-style-type: none;
   display: inline;
   margin-right: 20px; }
-  li a {
-    text-decoration: none; }
-    li a:visited {
-      color: #fff; }
+  li a:visited {
+    color: #fff; }
 
 .menu i {
   font-size: 40px;
@@ -80,6 +89,54 @@ article img {
   padding: 4rem;
   padding-top: 1rem; }
 
+/* section banner-1 style*/
+.banner {
+  display: grid;
+  height: 30rem;
+  background-repeat: no-repeat;
+  grid-template-rows: repeat(3, 1fr); }
+
+.banner-content {
+  grid-row: 2 / 3; }
+  .banner-content h3 {
+    font-size: 34px;
+    padding-bottom: 2rem; }
+  .banner-content button {
+    background: transparent;
+    padding: 1rem 2rem 1rem  2rem;
+    border-radius: 12px;
+    cursor: pointer; }
+    .banner-content button a:visited {
+      color: #202E21; }
+    .banner-content button:hover {
+      background: #202E21;
+      color: #fff; }
+  .banner-content p {
+    font-size: 26px;
+    display: inline; }
+
+.banner-1 {
+  background-image: url("../assets/green/banner-1.jpg"); }
+  .banner-1 button {
+    border: 2px solid #202E21; }
+
+.banner-2 {
+  background-image: url("../assets/green/banner-2.jpg");
+  color: #fff; }
+  .banner-2 button {
+    color: #fff;
+    border: 2px solid #fff;
+    padding-top: 0.2rem; }
+    .banner-2 button:hover {
+      background: #fff;
+      color: #202E21; }
+    .banner-2 button a:visited {
+      color: #fff; }
+    .banner-2 button i {
+      font-size: 40px;
+      padding-left: 1rem;
+      padding-top: 0.5rem; }
+
 /* Media Queries */
 @media screen and (max-width: 517px) {
   header img {
@@ -104,4 +161,13 @@ article img {
   article {
     grid-template-columns: repeat(1, 1fr); }
     article .tile {
-      padding: 2rem 2rem 0 2rem; } }
+      padding: 2rem 2rem 0 2rem; }
+  /*   banners */
+  .banner {
+    height: 20rem; }
+    .banner h3 {
+      font-size: 24px; }
+    .banner p {
+      font-size: 20px; }
+  .banner-2 button i {
+    font-size: 30px; } }
