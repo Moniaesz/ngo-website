@@ -20,7 +20,7 @@ h2 {
   /*   grid-template-areas: "margin logo empty nav margin-2"; */ }
 
 #landing-page {
-  background-image: url(https://images.pexels.com/photos/1190906/pexels-photo-1190906.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url("../assets/green/dark-green.jpg");
   height: 100vh; }
 
 header {
