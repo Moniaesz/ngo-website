@@ -82,6 +82,36 @@ li {
 }
 
 
+/* section o-nas style*/
+
+#o-nas {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  margin: 3%;
+
+  span {
+    color: $grassGreen;
+  }
+}
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+article img {
+  height: 100px;
+  padding-bottom: 1rem;
+}
+
+.tile {
+  // border: 2px solid orange;
+  padding: 4rem;
+  padding-top: 1rem;
+}
+
 
 
 /* Media Queries */
@@ -113,5 +143,13 @@ li {
   }
   h2 {
     font-size: 30px;
+  }
+/*   o-nas section */
+    article {
+    grid-template-columns: repeat(1, 1fr);
+
+      .tile {
+        padding: 2rem 2rem 0 2rem;
+      }
   }
 }

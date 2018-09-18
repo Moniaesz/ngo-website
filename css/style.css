@@ -58,6 +58,28 @@ li {
 .color-menu {
   color: fuchsia; }
 
+/* section o-nas style*/
+#o-nas {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+h1 {
+  margin: 3%; }
+  h1 span {
+    color: #69801F; }
+
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+article img {
+  height: 100px;
+  padding-bottom: 1rem; }
+
+.tile {
+  padding: 4rem;
+  padding-top: 1rem; }
+
 /* Media Queries */
 @media screen and (max-width: 517px) {
   header img {
@@ -77,4 +99,9 @@ li {
   .menu {
     grid-column: 4/5; }
   h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  /*   o-nas section */
+  article {
+    grid-template-columns: repeat(1, 1fr); }
+    article .tile {
+      padding: 2rem 2rem 0 2rem; } }
