@@ -1,0 +1,116 @@
+// colors
+$grassGreen: #69801F;
+$darkGreen: #202E21;
+$lightGrey: #D6E5E3;
+$lightBlack: #262626;
+
+
+/* general styles */
+body, html, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* landing page style */
+h2 {
+  font-size: 45px;
+  font-weight: light;
+  margin: 0% 5%;
+  // border: 4px solid fuchsia;
+  color: #fff;
+  margin-top: 35vh;
+}
+
+.container {
+  display: grid;
+  text-align: center;
+/*   grid-template-columns: 50px 1fr 4fr 3fr 50px; */
+/*   grid-template-areas: "margin logo empty nav margin-2"; */
+}
+
+#landing-page {
+    background-image: url(https://images.pexels.com/photos/1190906/pexels-photo-1190906.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  height: 100vh;
+}
+
+header {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 150px 1fr 4fr auto 150px;
+
+  img {
+    grid-column: 2 / 3;
+    height: 85px;
+    border: 2px solid $grassGreen;
+    border-radius: 5%;
+  }
+}
+
+nav {
+/*   border: 2px solid fuchsia; */
+  display: flex;
+  align-items: center;
+  grid-column: 4 / 5;
+  margin: 0 auto;
+  height: 60px;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 20px;
+
+  a {
+    text-decoration: none;
+
+    &:visited {
+      color: #fff;
+    }
+  }
+
+}
+
+.menu i {
+  font-size: 40px;
+  display: none;
+  color: #fff;
+}
+
+.color-menu {
+  color: fuchsia;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 517px) {
+  header {
+    img {
+      height: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 835px) {
+/*   landing page */
+  header {
+  padding-top: 3%;
+  display: grid;
+  grid-template-columns: 30px 1fr 4fr auto 30px;
+}
+  nav {
+    display: none;
+  }
+  .menu i {
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .menu {
+    grid-column: 4/5
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
