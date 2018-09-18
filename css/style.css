@@ -5,7 +5,7 @@ body, html, ul {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif; }
 
-h1, h2, h3, h4, p, i {
+h1, h2, h3, h4, p, i, img {
   font-weight: 100;
   margin: 0;
   padding: 0; }
@@ -152,6 +152,41 @@ article img {
 .misja-content {
   border-radius: 12px; }
 
+/* Tiles section */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #F9F9F3;
+  padding: 3rem; }
+
+.photo-tile {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  border: 2px solid fuchsia;
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 2rem; }
+
+.photo-tile-content {
+  grid-row: 2 / span 1;
+  background: #202E21;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .photo-tile-content p {
+    color: #fff;
+    font-size: 20px; }
+
+.tile-one {
+  background-image: url("../assets/kafelki/rower.jpg"); }
+
+.tile-two {
+  background-image: url("../assets/kafelki/plac_zabaw.jpg"); }
+
+.tile-three {
+  background-image: url("../assets/kafelki/chodniki.jpg"); }
+
 /* Media Queries */
 @media screen and (max-width: 517px) {
   header img {
@@ -186,6 +221,10 @@ article img {
       font-size: 20px; }
   .banner-2 button i {
     font-size: 30px; } }
+
+@media screen and (max-width: 1068px) {
+  .tiles {
+    grid-template-columns: repeat(1, 1fr); } }
 
 @media screen and (min-width: 657px) {
   #misja {
