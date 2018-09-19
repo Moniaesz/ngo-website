@@ -211,6 +211,20 @@ article img {
 .tile-three {
   background-image: url("../assets/kafelki/chodniki.jpg"); }
 
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center; }
+  .gallery img {
+    width: 100%; }
+
+.gallery-title {
+  grid-column: 1 / -1; }
+  .gallery-title img {
+    height: 80px; }
+
 /* Media Queries */
 @media screen and (max-width: 517px) {
   header img {
