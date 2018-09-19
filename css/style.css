@@ -50,8 +50,7 @@ header {
   grid-template-columns: 150px 1fr 4fr auto 150px; }
   header img {
     grid-column: 2 / 3;
-    height: 85px;
-    border: 2px solid #69801F;
+    height: 130px;
     border-radius: 5%; }
 
 nav {
@@ -226,16 +225,14 @@ article img {
     height: 80px; }
 
 /* Media Queries */
-@media screen and (max-width: 517px) {
-  header img {
-    height: 50px; } }
-
 @media screen and (max-width: 835px) {
   /*   landing page */
   header {
     padding-top: 3%;
     display: grid;
     grid-template-columns: 30px 1fr 4fr auto 30px; }
+    header img {
+      height: 90px; }
   nav {
     display: none; }
   .menu i {

@@ -70,8 +70,7 @@ header {
 
   img {
     grid-column: 2 / 3;
-    height: 85px;
-    border: 2px solid $grassGreen;
+    height: 130px;
     border-radius: 5%;
   }
 }
@@ -324,11 +323,7 @@ article img {
 
 /* Media Queries */
 @media screen and (max-width: 517px) {
-  header {
-    img {
-      height: 50px;
-    }
-  }
+
 }
 
 @media screen and (max-width: 835px) {
@@ -337,6 +332,9 @@ article img {
   padding-top: 3%;
   display: grid;
   grid-template-columns: 30px 1fr 4fr auto 30px;
+    img {
+      height: 90px;
+    }
 }
   nav {
     display: none;
