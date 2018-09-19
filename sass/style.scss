@@ -19,8 +19,12 @@ h1, h2, h3, h4, p, i, img {
   padding: 0;
 }
 
+h1 {
+  font-size: 37px;
+}
+
 h3 {
-  font-size: 34px;
+  font-size: 33px;
 }
 
 h4 {
@@ -128,7 +132,7 @@ article img {
 
 .tile {
   // border: 2px solid orange;
-  padding: 4rem;
+  padding: 3rem;
   padding-top: 1rem;
 }
 
@@ -224,7 +228,7 @@ article img {
   }
   img {
     height: 50px;
-    padding-bottom: 2rem ;
+    padding-bottom: 2rem;
   }
 }
 
@@ -240,7 +244,7 @@ article img {
   grid-template-columns: repeat(3, 1fr);
   background: $lightGrey;
   background-size: cover;
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 
 .photo-tile {
@@ -248,30 +252,39 @@ article img {
   // grid-template-rows: repeat(3, 1fr);
   grid-template-rows: 1.5fr 70px 1.5fr;
   grid-template-columns: repeat(3, 1fr);
-  border: 2px solid fuchsia;
+  // border: 2px solid fuchsia;
   height: 15rem;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   margin-left: 2rem;
   margin-right: 2rem;
   // margin: 2rem 4rem 2rem 4rem;
 }
 
 .photo-tile-content {
-  border: 2px solid black;
+  // border: 2px solid black;
   grid-row: 2 / span 1;
   grid-column: 1 / -1;
   background: $darkGreen;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
+  transition: ease-in-out .2s;
 
+  &:hover {
+    background: $lightGrey;
+
+    p {
+      color: $darkGreen;
+    }
+  }
 
   p {
     color: #fff;
     font-size: 20px;
-    border: 2px solid orange;
+    // border: 2px solid orange;
     padding: 2rem;
   }
 }
@@ -323,7 +336,6 @@ article img {
 /*   o-nas section */
     article {
     grid-template-columns: repeat(1, 1fr);
-
       .tile {
         padding: 2rem 2rem 0 2rem;
       }
@@ -350,8 +362,6 @@ article img {
 @media screen and (max-width: 800px) {
   .tiles {
     grid-template-columns: repeat(1, 1fr);
-    // padding-left: 4.5rem;
-    // padding-right: 4.5rem;
   }
 }
 
@@ -359,7 +369,6 @@ article img {
   .photo-tile {
     margin-left: 8.4rem;
     margin-right: 8.4rem;
-
   }
 }
 
@@ -393,5 +402,12 @@ article img {
   .tiles {
     padding-left: 13%;
     padding-right: 13%;
+  }
+}
+
+@media screen and (min-width:  2132px) {
+  .container {
+    max-width: 1750px;
+    margin: auto;
   }
 }

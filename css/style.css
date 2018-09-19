@@ -10,8 +10,11 @@ h1, h2, h3, h4, p, i, img {
   margin: 0;
   padding: 0; }
 
+h1 {
+  font-size: 37px; }
+
 h3 {
-  font-size: 34px; }
+  font-size: 33px; }
 
 h4 {
   font-size: 28px; }
@@ -92,7 +95,7 @@ article img {
   padding-bottom: 1rem; }
 
 .tile {
-  padding: 4rem;
+  padding: 3rem;
   padding-top: 1rem; }
 
 /* banners sections style*/
@@ -168,32 +171,35 @@ article img {
   grid-template-columns: repeat(3, 1fr);
   background: #F9F9F3;
   background-size: cover;
-  padding-top: 2rem; }
+  padding-top: 4rem; }
 
 .photo-tile {
   display: grid;
   grid-template-rows: 1.5fr 70px 1.5fr;
   grid-template-columns: repeat(3, 1fr);
-  border: 2px solid fuchsia;
   height: 15rem;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   margin-left: 2rem;
   margin-right: 2rem; }
 
 .photo-tile-content {
-  border: 2px solid black;
   grid-row: 2 / span 1;
   grid-column: 1 / -1;
   background: #202E21;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  transition: 0.3s;
+  transition: ease-in-out .2s; }
+  .photo-tile-content:hover {
+    background: #F9F9F3; }
+    .photo-tile-content:hover p {
+      color: #202E21; }
   .photo-tile-content p {
     color: #fff;
     font-size: 20px;
-    border: 2px solid orange;
     padding: 2rem; }
 
 .tile-one {
@@ -270,3 +276,8 @@ article img {
   .tiles {
     padding-left: 13%;
     padding-right: 13%; } }
+
+@media screen and (min-width: 2132px) {
+  .container {
+    max-width: 1750px;
+    margin: auto; } }
