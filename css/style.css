@@ -156,10 +156,10 @@ article img {
   padding: 1.4rem;
   font-size: 15px; }
   #misja h4 {
-    padding-bottom: 1rem; }
+    padding-bottom: 1.3rem; }
   #misja img {
-    height: 50px;
-    padding-bottom: 2rem; }
+    height: 80px;
+    padding-bottom: 1.5rem; }
 
 .misja-content {
   border-radius: 12px; }
@@ -269,8 +269,6 @@ article img {
 @media screen and (min-width: 657px) {
   #misja {
     padding: 4rem 6rem 4rem 6rem; }
-    #misja h4 {
-      padding-bottom: 3rem; }
   .misja-content {
     background-color: #F9F9F3;
     padding: 2rem;
