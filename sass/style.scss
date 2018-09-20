@@ -1,8 +1,11 @@
-// colors
+// variables
 $grassGreen: #69801F;
+$lightdarkGreen: #233a0e;
 $darkGreen: #202E21;
 $lightGrey: #F9F9F3;
 $lightBlack: #262626;
+
+$boxShadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
 
 /* general styles */
@@ -265,7 +268,7 @@ article img {
   // border: 2px solid black;
   grid-row: 2 / span 1;
   grid-column: 1 / -1;
-  background: $darkGreen;
+  background: $lightdarkGreen;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -301,6 +304,78 @@ article img {
 }
 
 
+/* info-cards section styles */
+.info-cards {
+  margin: 4rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr 80px 150px  80px 1fr 1fr;
+  // grid-template-columns: auto auto 80px 150px  80px auto auto;
+  grid-template-rows: 1fr 1fr 150px 1fr 1fr;
+  // grid-template-rows: repeat(5, 150px);
+  font-size: 20px;
+
+  i {
+    font-size: 40px;
+    margin-bottom: 1rem;
+  }
+}
+
+.circle-img {
+  background-image: url("../assets/green/green2.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  grid-column: 3 / 6;
+  grid-row: 2 / 5;
+  border-radius: 50%;
+  box-shadow: $boxShadow;
+}
+
+.info-cards-tile {
+  display: grid;
+  align-items: center;
+  width: 20rem;
+  color: $darkGreen;
+  border: 1px solid #dbd9d9;
+  background-color: $lightGrey;
+  border-radius: 20px;
+  transition: 0.2s;
+  box-shadow: $boxShadow;
+
+  &:hover {
+    background-color: $lightdarkGreen;
+    color: $lightGrey;
+    border: none;
+  }
+}
+
+.info-card-one {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+.info-card-two {
+  grid-column: 6 / 8;
+  grid-row: 1 / 3;
+}
+.info-card-three {
+  grid-column: 1 / 3;
+  grid-row: 4 / 6;
+}
+.info-card-four {
+  grid-column: 6 / 8;
+  grid-row: 4 / 6;
+}
+
+.info-cards-tile-content {
+  margin: 6rem 5rem 6rem 5rem;
+}
+
+
+
+
 /* Gallery */
 .gallery {
   display: grid;
@@ -308,6 +383,7 @@ article img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   padding: 4rem 2rem 4rem 2rem;
+  background: $lightGrey;
 
     h4 {
       grid-column: 1 / -1;
@@ -394,8 +470,29 @@ article img {
 }
 
 @media screen and (max-width: 800px) {
+  // photo-tiles section
   .tiles {
     grid-template-columns: repeat(1, 1fr);
+  }
+  // .circle-img {
+  //   display: none;
+  // }
+}
+
+@media screen and (max-width: 980px) {
+  .info-cards {
+    grid-template-columns: 1fr 1fr 40px 0  40px 1fr 1fr;
+    grid-template-rows: 1fr 1fr 60px 1fr 1fr;
+  }
+  .circle-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .circle-img {
+    height: 200px;
+    width: 200px;
   }
 }
 
