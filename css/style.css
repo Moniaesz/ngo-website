@@ -164,7 +164,7 @@ article img {
 .misja-content {
   border-radius: 12px; }
 
-/* Tiles section */
+/* photo-tiles section */
 .tiles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -202,13 +202,13 @@ article img {
     padding: 2rem; }
 
 .tile-one {
-  background-image: url("../assets/kafelki/rower.jpg"); }
+  background-image: url("../assets/kafelki/rower-opacity.jpg"); }
 
 .tile-two {
-  background-image: url("../assets/kafelki/plac_zabaw.jpg"); }
+  background-image: url("../assets/kafelki/plac-zabaw-opacity.jpg"); }
 
 .tile-three {
-  background-image: url("../assets/kafelki/chodniki.jpg"); }
+  background-image: url("../assets/kafelki/chodniki-opacity.jpg"); }
 
 /* info-cards section styles */
 .info-cards {
