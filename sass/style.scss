@@ -407,6 +407,56 @@ article img {
     width: 100%;
   }
 }
+/* footer */
+#kontakt {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  background: $darkGreen;
+  color: #d8d8d6;
+  line-height: 2rem;
+  font-size: 17px;
+
+  img {
+    height: 110px;
+    opacity: 0.9;
+  }
+
+  i {
+    font-size: 45px;
+    margin-top: 0.4rem;
+  }
+
+  p {
+    margin-top: 0.3rem;
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+}
+
+  .mail p:first-child {
+    font-size: 18px;
+    // font-weight: bold;
+  }
+
+.small-footer {
+  margin-top: 4.5rem;
+  line-height: 1.2rem;
+    p {
+      font-size: 15px;
+      &:last-child {
+        font-size: 12px;
+      }
+    }
+
+    a {
+      color: #88a529;
+
+      &:hover {
+        color: #d8d8d6;
+      }
+    }
+}
 
 
 /* Media Queries */
@@ -531,6 +581,36 @@ article img {
   }
   .misja-content {
     padding: 5rem;
+  }
+  // footer
+  #kontakt {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "data mail facebook"
+      "small-footer small-footer small-footer";
+
+      .dane {
+        grid-area: data;
+      }
+      .facebook {
+        grid-area: facebook;
+      }
+      .mail {
+        grid-area: mail;
+      }
+      .small-footer {
+        grid-area: small-footer;
+      }
+  }
+}
+
+@media screen and (min-width:  1414px) {
+  #kontakt {
+    padding-left: 15rem;
+    padding-right: 15rem;
   }
 }
 

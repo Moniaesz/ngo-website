@@ -294,6 +294,40 @@ article img {
   .gallery img {
     width: 100%; }
 
+/* footer */
+#kontakt {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  background: #202E21;
+  color: #d8d8d6;
+  line-height: 2rem;
+  font-size: 17px; }
+  #kontakt img {
+    height: 110px;
+    opacity: 0.9; }
+  #kontakt i {
+    font-size: 45px;
+    margin-top: 0.4rem; }
+  #kontakt p {
+    margin-top: 0.3rem; }
+    #kontakt p:last-child {
+      margin-top: 0; }
+
+.mail p:first-child {
+  font-size: 18px; }
+
+.small-footer {
+  margin-top: 4.5rem;
+  line-height: 1.2rem; }
+  .small-footer p {
+    font-size: 15px; }
+    .small-footer p:last-child {
+      font-size: 12px; }
+  .small-footer a {
+    color: #88a529; }
+    .small-footer a:hover {
+      color: #d8d8d6; }
+
 /* Media Queries */
 @media screen and (min-width: 572px) and (max-width: 800px) {
   .photo-tile {
@@ -377,7 +411,26 @@ article img {
   #misja {
     padding: 5rem 18rem 5rem 18rem; }
   .misja-content {
-    padding: 5rem; } }
+    padding: 5rem; }
+  #kontakt {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "data mail facebook" "small-footer small-footer small-footer"; }
+    #kontakt .dane {
+      grid-area: data; }
+    #kontakt .facebook {
+      grid-area: facebook; }
+    #kontakt .mail {
+      grid-area: mail; }
+    #kontakt .small-footer {
+      grid-area: small-footer; } }
+
+@media screen and (min-width: 1414px) {
+  #kontakt {
+    padding-left: 15rem;
+    padding-right: 15rem; } }
 
 @media screen and (min-width: 1644px) {
   .gallery img:last-child {
