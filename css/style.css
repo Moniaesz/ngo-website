@@ -36,9 +36,7 @@ h2 {
 
 .container {
   display: grid;
-  text-align: center;
-  /*   grid-template-columns: 50px 1fr 4fr 3fr 50px; */
-  /*   grid-template-areas: "margin logo empty nav margin-2"; */ }
+  text-align: center; }
 
 #landing-page {
   background-image: url("../assets/green/dark-green.jpg");
@@ -54,7 +52,7 @@ header {
     border-radius: 5%; }
 
 nav {
-  /*   border: 2px solid fuchsia; */
+  border: 2px solid fuchsia;
   display: flex;
   align-items: center;
   grid-column: 4 / 5;
@@ -333,7 +331,6 @@ article img {
     margin-right: 8.4rem; } }
 
 @media screen and (max-width: 741px) {
-  /* info-cards */
   .info-cards {
     display: flex;
     flex-direction: column; }
@@ -348,7 +345,6 @@ article img {
     grid-template-columns: repeat(1, 1fr); } }
 
 @media screen and (max-width: 835px) {
-  /*   landing page */
   header {
     padding-top: 3%;
     display: grid;
@@ -369,7 +365,6 @@ article img {
     grid-template-columns: repeat(1, 1fr); }
     article .tile {
       padding: 2rem 2rem 0 2rem; }
-  /* banners */
   .banner {
     height: 20rem; }
     .banner h3 {
@@ -378,7 +373,6 @@ article img {
       font-size: 20px; }
   .banner-2 button i {
     font-size: 30px; }
-  /*   gallery */
   .gallery h4 {
     grid-template-columns: auto 15rem auto;
     font-size: 20px;
