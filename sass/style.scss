@@ -434,16 +434,12 @@ article img {
   }
 }
 
-  .mail p:first-child {
-    font-size: 18px;
-    // font-weight: bold;
-  }
-
-.small-footer {
-  margin-top: 4.5rem;
+#small-footer {
+  margin-top: 5.5rem;
   line-height: 1.2rem;
     p {
-      font-size: 15px;
+      opacity: 0.7;
+      font-size: 14px;
       &:last-child {
         font-size: 12px;
       }
@@ -556,6 +552,21 @@ article img {
   }
 }
 
+@media screen and (max-width: 1078px) {
+  #kontakt p {
+    margin-top: 2rem;
+  }
+  .mail {
+    p:first-child {
+      margin-bottom: 2rem;
+    }
+  }
+  #small-footer p{
+    margin-top: 0;
+    padding: 0.2rem;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .circle-img {
     height: 200px;
@@ -601,7 +612,7 @@ article img {
       .mail {
         grid-area: mail;
       }
-      .small-footer {
+      #small-footer {
         grid-area: small-footer;
       }
   }
