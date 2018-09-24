@@ -63,15 +63,15 @@ li {
   display: inline;
   margin-right: 20px; }
   li a {
-    padding: 15px 0;
+    padding: 20px 0;
     transition: 0.3s ease-in-out;
     border-bottom: 2px solid transparent; }
     li a:visited {
       color: #fff; }
     li a:hover {
       text-decoration: none;
-      border-bottom: 2px solid #69801F;
-      padding: 6px 0; }
+      border-bottom: 2px solid #fff;
+      padding: 8px 0; }
 
 .menu i {
   font-size: 40px;
