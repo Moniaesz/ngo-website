@@ -39,7 +39,7 @@ h2 {
   font-weight: light;
   margin: 0% 5%;
   color: #fff;
-  margin-top: 30vh; }
+  margin-top: 23vh; }
 
 @supports (display: grid) {
   .container {
@@ -50,7 +50,7 @@ h2 {
 
 #landing-page {
   background-image: url("../assets/green/dark-green.jpg");
-  height: 100vh; }
+  height: 80vh; }
 
 @supports (display: grid) {
   header {
@@ -158,7 +158,8 @@ article img {
   background-repeat: no-repeat; }
 
 .banner-content h3 {
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  font-weight: 400; }
 
 .banner-content button {
   background: transparent;
@@ -208,7 +209,7 @@ article img {
 * === misja section ===
 */
 #misja {
-  padding: 1.4rem;
+  padding: 2.5rem 1.4rem;
   font-size: 15px; }
   #misja h4 {
     padding-bottom: 1.3rem; }
@@ -307,7 +308,7 @@ article img {
 .info-cards-tile {
   display: grid;
   align-items: center;
-  width: 20rem;
+  width: 18rem;
   color: #233a0e;
   border: 1px solid #dbd9d9;
   background-color: #F9F9F3;
@@ -408,7 +409,7 @@ article img {
     #small-footer p:last-child {
       font-size: 12px; }
   #small-footer a {
-    color: #88a529;
+    color: #b8da48;
     transition: 0.1s ease-in-out; }
     #small-footer a:hover {
       color: #d8d8d6; }
@@ -427,13 +428,22 @@ article img {
     margin-right: 8.4rem; } }
 
 @media screen and (max-width: 741px) {
+  h1 {
+    font-size: 25px; }
+  #misja p {
+    font-size: 16px; }
+  .banner-content p {
+    font-weight: 400; }
   @supports (display: grid) {
     .info-cards {
+      margin: 3rem 2rem;
       display: flex;
       flex-direction: column; }
     .info-cards-tile {
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       max-width: 100%; }
+      .info-cards-tile:last-child {
+        margin-bottom: auto; }
     .info-cards-tile-content {
       margin: 3rem 5rem 3rem 5rem; } }
   @supports not (display: grid) {

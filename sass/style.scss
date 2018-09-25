@@ -48,7 +48,7 @@ h2 {
   font-weight: light;
   margin: 0% 5%;
   color: #fff;
-  margin-top: 30vh;
+  margin-top: 23vh;
 }
 @supports (display: grid) {
   .container {
@@ -60,7 +60,7 @@ h2 {
 }
 #landing-page {
   background-image: url("../assets/green/dark-green.jpg");
-  height: 100vh;
+  height: 80vh;
 }
 @supports (display: grid) {
   header {
@@ -190,6 +190,7 @@ article img {
 .banner-content {
   h3 {
     padding-bottom: 2rem;
+    font-weight: 400;
   }
   button {
     background: transparent;
@@ -249,7 +250,7 @@ article img {
 * === misja section ===
 */
 #misja {
-  padding: 1.4rem;
+  padding: 2.5rem 1.4rem;
   font-size: 15px;
   h4 {
     padding-bottom: 1.3rem;
@@ -367,7 +368,7 @@ article img {
 .info-cards-tile {
   display: grid;
   align-items: center;
-  width: 20rem;
+  width: 18rem;
   color: $lightdarkGreen;
   border: 1px solid #dbd9d9;
   background-color: $lightGrey;
@@ -487,7 +488,7 @@ article img {
     }
   }
   a {
-    color: #88a529;
+    color: #b8da48;
     transition:  0.1s ease-in-out;
     &:hover {
       color: #d8d8d6;
@@ -512,23 +513,35 @@ article img {
   }
 }
 @media screen and (max-width: 741px) {
+  h1 {
+    font-size: 25px;
+  }
+  #misja {
+    p {font-size: 16px;}
+  }
+  .banner-content {
+    p { 
+      font-weight: 400;
+    }
+  }
   @supports (display: grid) {
     .info-cards {
+      margin: 3rem 2rem;
       display: flex;
       flex-direction: column;
     }
     .info-cards-tile {
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       max-width: 100%;
+      &:last-child {
+        margin-bottom: auto;
+      }
     }
     .info-cards-tile-content {
        margin: 3rem 5rem 3rem 5rem;
     }
   }
   @supports not (display: grid) {
-    .info-cards {
-
-    }
     .info-cards-tile-content {
       margin: 2.5rem 3rem;
     }
