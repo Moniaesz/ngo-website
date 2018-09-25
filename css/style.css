@@ -1,4 +1,9 @@
-/* general styles */
+/*
+* === color/shadow variables ===
+*/
+/*
+* === general styles ===
+*/
 body, html, ul {
   margin: 0;
   padding: 0;
@@ -26,7 +31,9 @@ a {
   text-decoration: none;
   color: inherit; }
 
-/* landing page style */
+/*
+* === landing page ===
+*/
 h2 {
   font-size: 45px;
   font-weight: light;
@@ -96,7 +103,9 @@ li {
 .color-menu {
   color: fuchsia; }
 
-/* section o-nas style*/
+/*
+* === o-nas section  ===
+*/
 #o-nas {
   padding-top: 2rem;
   padding-bottom: 2rem; }
@@ -128,7 +137,9 @@ article img {
   border-radius: 10px;
   padding-top: 3rem; }
 
-/* banners sections style*/
+/*
+* === banners sections ===
+*/
 @supports (display: grid) {
   .banner {
     display: grid;
@@ -193,7 +204,9 @@ article img {
       padding-left: 1rem;
       padding-top: 0.5rem; }
 
-/* Misja section */
+/*
+* === misja section ===
+*/
 #misja {
   padding: 1.4rem;
   font-size: 15px; }
@@ -206,7 +219,9 @@ article img {
 .misja-content {
   border-radius: 12px; }
 
-/* photo-tiles section */
+/*
+* === photo-tiles section ===
+*/
 @supports not (display: grid) {
   .tiles {
     display: none; } }
@@ -252,7 +267,9 @@ article img {
   .tile-three {
     background-image: url("../assets/kafelki/chodniki-opacity.jpg"); } }
 
-/* info-cards section styles */
+/*
+* === info-cards section ===
+*/
 @supports (display: grid) {
   .info-cards {
     margin: 4rem;
@@ -321,7 +338,9 @@ article img {
 .info-cards-tile-content {
   margin: 6rem 5rem 6rem 5rem; }
 
-/* Gallery */
+/*
+* === gallery ===
+*/
 @supports (display: grid) {
   .gallery {
     display: grid;
@@ -356,7 +375,9 @@ article img {
   .gallery h4 {
     padding-bottom: 1.5rem; }
 
-/* footer */
+/*
+* === footer ===
+*/
 #kontakt {
   padding-top: 3rem;
   padding-bottom: 1.5rem;
@@ -392,7 +413,9 @@ article img {
     #small-footer a:hover {
       color: #d8d8d6; }
 
-/* Media Queries */
+/*
+* === Media Queries  ===
+*/
 @media screen and (max-width: 360px) {
   @supports not (display: grid) {
     .info-cards {

@@ -1,4 +1,6 @@
-// variables
+/*
+* === color/shadow variables ===
+*/
 $grassGreen: #69801F;
 $lightdarkGreen: #233a0e;
 $darkGreen: #202E21;
@@ -7,42 +9,40 @@ $lightBlack: #262626;
 
 $boxShadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
-/* general styles */
+/*
+* === general styles ===
+*/
 body, html, ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
-
 h1, h2, h3, h4, p, i, img {
   font-weight: 100;
   margin: 0;
   padding: 0;
 }
-
 h1 {
   font-size: 37px;
 }
-
 h3 {
   font-size: 33px;
 }
-
 h4 {
   font-size: 28px;
 }
-
 li {
   list-style-type: none;
 }
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* landing page style */
+/*
+* === landing page ===
+*/
 h2 {
   font-size: 45px;
   font-weight: light;
@@ -50,29 +50,23 @@ h2 {
   color: #fff;
   margin-top: 30vh;
 }
-
-
 @supports (display: grid) {
   .container {
   display: grid;
   }
 }
-
 .container {
   text-align: center;
 }
-
 #landing-page {
   background-image: url("../assets/green/dark-green.jpg");
   height: 100vh;
 }
-
 @supports (display: grid) {
   header {
     margin-top: 2%;
     display: grid;
     grid-template-columns: 150px 1fr 4fr auto 150px;
-
     img {
       grid-column: 2 / 3;
       height: 130px;
@@ -84,7 +78,6 @@ h2 {
     align-items: center;
   }
 }
-
 @supports not (display: grid) {
   header {
     img {
@@ -92,34 +85,27 @@ h2 {
     }
   }
 }
-
 @supports not (display: grid) {
   header {
     padding-top: 3rem;
   }
-
   nav {
     padding-top: 4rem;
   }
 }
-
-
 nav {
   font-size: 19px;
   grid-column: 4 / 5;
   margin: 0 auto;
   height: 60px;
 }
-
 li {
   display: inline;
   margin-right: 20px;
-
   a {
     padding: 20px 0;
     transition: 0.3s ease-in-out;
     border-bottom: 2px solid transparent;
-
     &:visited {
       color: #fff;
     }
@@ -130,49 +116,43 @@ li {
     }
   }
 }
-
 .menu i {
   font-size: 40px;
   display: none;
   color: #fff;
 }
-
 .color-menu {
   color: fuchsia;
 }
 
-/* section o-nas style*/
+/*
+* === o-nas section  ===
+*/
 #o-nas {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-
 h1 {
   margin: 3%;
-
   span {
     color: $grassGreen;
   }
 }
-
 @supports (display: grid) {
   article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
- }
+  }
 }
-
 @supports not (display: grid) {
   .tile {
     margin: 3rem;
   }
 }
-
 article img {
   height: 100px;
   padding-bottom: 1rem;
 }
-
 .tile {
   padding: 3rem;
   padding-top: 1rem;
@@ -183,7 +163,9 @@ article img {
   padding-top: 3rem;
 }
 
-/* banners sections style*/
+/*
+* === banners sections ===
+*/
 @supports (display: grid) {
   .banner {
     display: grid;
@@ -193,7 +175,6 @@ article img {
     grid-row: 2 / 3;
   }
 }
-
 @supports not (display: grid) {
   .tiles {
     padding-bottom: 4rem;
@@ -202,88 +183,74 @@ article img {
     padding: 160px 0;
   }
 }
-
 .banner {
   height: 30rem;
   background-repeat: no-repeat;
 }
-
 .banner-content {
-
   h3 {
     padding-bottom: 2rem;
   }
-
   button {
     background: transparent;
     padding: 1rem 2rem 1rem  2rem ;
     border-radius: 12px;
     cursor: pointer;
-
     a:visited {
       color: $darkGreen;
     }
-
     &:hover {
       background: $darkGreen;
       color: #fff;
     }
   }
-
   p {
     font-size: 26px;
     display: inline;
   }
 }
-
 .banner-1 {
-    background-image: url("../assets/green/banner-1.jpg");
-
-    button {
-      border: 2px solid $darkGreen;
-      transition: 0.3s;
+  background-image: url("../assets/green/banner-1.jpg");
+  button {
+    border: 2px solid $darkGreen;
+    transition: 0.3s;
+  }
+  i {
+    font-size: 40px;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+  }
+}
+.banner-2 {
+  background-image: url("../assets/green/banner-2.jpg");
+  background-attachment: fixed;
+  color: #fff;
+  button {
+    color: #fff;
+    border: 2px solid #fff;
+    padding-top: 0.2rem;
+    transition: 0.3s;
+    &:hover {
+      background: #fff;
+      color: $darkGreen;
+    }
+    a:visited {
+      color: #fff;
     }
     i {
       font-size: 40px;
       padding-left: 1rem;
       padding-top: 0.5rem;
     }
+  }
 }
 
-.banner-2 {
-    background-image: url("../assets/green/banner-2.jpg");
-    background-attachment: fixed;
-    color: #fff;
-
-    button {
-      color: #fff;
-      border: 2px solid #fff;
-      padding-top: 0.2rem;
-      transition: 0.3s;
-
-      &:hover {
-        background: #fff;
-        color: $darkGreen;
-      }
-
-      a:visited {
-        color: #fff;
-      }
-
-      i {
-        font-size: 40px;
-        padding-left: 1rem;
-        padding-top: 0.5rem;
-      }
-    }
-}
-
-
-/* Misja section */
+/*
+* === misja section ===
+*/
 #misja {
   padding: 1.4rem;
   font-size: 15px;
-
   h4 {
     padding-bottom: 1.3rem;
   }
@@ -292,22 +259,19 @@ article img {
     padding-bottom: 1.5rem;
   }
 }
-
 .misja-content {
   border-radius: 12px;
 }
 
-
-/* photo-tiles section */
-
+/*
+* === photo-tiles section ===
+*/
 @supports not (display: grid) {
   .tiles {
     display: none;
   }
 }
-
 @supports (display: grid) {
-
   .tiles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -315,7 +279,6 @@ article img {
     background-size: cover;
     padding-top: 4rem;
   }
-
   .photo-tile {
     display: grid;
     grid-template-rows: 1.5fr 70px 1.5fr;
@@ -327,7 +290,6 @@ article img {
     margin-left: 2rem;
     margin-right: 2rem;
   }
-
   .photo-tile-content {
     grid-row: 2 / span 1;
     grid-column: 1 / -1;
@@ -337,37 +299,32 @@ article img {
     justify-content: center;
     transition: 0.3s;
     transition: ease-in-out .2s;
-
     &:hover {
       background: $lightGrey;
-
       p {
         color: $darkGreen;
       }
     }
-
     p {
       color: #fff;
       font-size: 20px;
       padding: 2rem;
     }
   }
-
   .tile-one {
     background-image: url("../assets/kafelki/rower-opacity.jpg");
   }
-
   .tile-two {
     background-image: url("../assets/kafelki/plac-zabaw-opacity.jpg");
   }
-
   .tile-three {
     background-image: url("../assets/kafelki/chodniki-opacity.jpg");
   }
 }
 
-/* info-cards section styles */
-
+/*
+* === info-cards section ===
+*/
 @supports (display: grid) {
   .info-cards {
   margin: 4rem;
@@ -389,28 +346,24 @@ article img {
     box-shadow: $boxShadow;
   }
 }
-
 @supports not (display: grid) {
   .info-cards {
     padding-top: 4rem;
     padding-bottom: 4rem;
-   .info-cards-tile {
+    .info-cards-tile {
       display: inline-block;
       max-width: 100%;
       margin: auto 1rem 2rem 1rem;
-   }
+    }
   }
 }
-
 .info-cards {
   font-size: 20px;
-
   i {
     font-size: 40px;
     margin-bottom: 1rem;
   }
 }
-
 .info-cards-tile {
   display: grid;
   align-items: center;
@@ -421,14 +374,12 @@ article img {
   border-radius: 20px;
   transition: 0.2s ease-in-out;
   box-shadow: $boxShadow;
-
   &:hover {
     background-color: $lightdarkGreen;
     color: $lightGrey;
     border: none;
   }
 }
-
 .info-card-one {
   grid-column: 1 / 3;
   grid-row: 1 / 3;
@@ -445,14 +396,13 @@ article img {
   grid-column: 6 / 8;
   grid-row: 4 / 6;
 }
-
 .info-cards-tile-content {
   margin: 6rem 5rem 6rem 5rem;
 }
 
-
-/* Gallery */
-
+/*
+* === gallery ===
+*/
 @supports (display: grid) {
   .gallery {
     display: grid;
@@ -467,7 +417,6 @@ article img {
     grid-gap: 35px;
     align-items: center;
     padding-bottom: 1.5rem;
-
     &:before, &:after {
       border-radius: 10px;
       display: block;
@@ -475,13 +424,11 @@ article img {
       height: 7px;
       background: linear-gradient(to var(--direction, left), $grassGreen, transparent);
     }
-
     &:after {
       --direction: right;
     }
   }
 }
-
 @supports not (display: grid) {
   .gallery {
     img {
@@ -489,22 +436,20 @@ article img {
     }
   }
 }
-
 .gallery {
   padding: 4rem 2rem 4rem 2rem;
   background: $lightGrey;
-
   img {
     width: 100%;
   }
-
   h4 {
     padding-bottom: 1.5rem;
   }
-
-
 }
-/* footer */
+
+/*
+* === footer ===
+*/
 #kontakt {
   padding-top: 3rem;
   padding-bottom: 1.5rem;
@@ -512,12 +457,10 @@ article img {
   color: #d8d8d6;
   line-height: 2rem;
   font-size: 17px;
-
   img {
     height: 110px;
     opacity: 0.9;
   }
-
   i {
     transition:  0.2s ease-in-out;
     font-size: 45px;
@@ -526,7 +469,6 @@ article img {
       color: $grassGreen;
     }
   }
-
   p {
     margin-top: 0.3rem;
     &:last-child {
@@ -534,31 +476,28 @@ article img {
     }
   }
 }
-
 #small-footer {
   margin-top: 5.5rem;
   line-height: 1.2rem;
-    p {
-      opacity: 0.7;
-      font-size: 14px;
-      &:last-child {
-        font-size: 12px;
-      }
+  p {
+    opacity: 0.7;
+    font-size: 14px;
+    &:last-child {
+      font-size: 12px;
     }
-
-    a {
-      color: #88a529;
-transition:  0.1s ease-in-out;
-
-      &:hover {
-        color: #d8d8d6;
-      }
+  }
+  a {
+    color: #88a529;
+    transition:  0.1s ease-in-out;
+    &:hover {
+      color: #d8d8d6;
     }
+  }
 }
 
-
-/* Media Queries */
-
+/*
+* === Media Queries  ===
+*/
 @media screen and (max-width: 360px) {
   @supports not (display: grid) {
     .info-cards {
@@ -566,14 +505,12 @@ transition:  0.1s ease-in-out;
     }
   }
 }
-
 @media screen and (min-width: 572px) and (max-width: 800px) {
   .photo-tile {
     margin-left: 8.4rem;
     margin-right: 8.4rem;
   }
 }
-
 @media screen and (max-width: 741px) {
   @supports (display: grid) {
     .info-cards {
@@ -597,32 +534,30 @@ transition:  0.1s ease-in-out;
     }
   }
 }
-
 @media screen and (max-width: 800px) {
   // photo-tiles section
   .tiles {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
 @media screen and (max-width: 835px) {
 // landing page
-@supports (display: grid) {
-  header {
-    padding-top: 3%;
-    display: grid;
+  @supports (display: grid) {
+    header {
+      padding-top: 3%;
+      display: grid;
+    }
+    nav {
+      display: none;
+    }
+    .menu i {
+      display: block;
+      margin-top: 0.5rem;
+    }
+    .menu {
+      grid-column: 4/5
+    }
   }
-  nav {
-    display: none;
-  }
-  .menu i {
-    display: block;
-    margin-top: 0.5rem;
-  }
-  .menu {
-    grid-column: 4/5
-  }
-}
   header {
     img {
       height: 90px;
@@ -670,7 +605,6 @@ transition:  0.1s ease-in-out;
     }
   }
 }
-
 @media screen and (max-width: 980px) {
   .info-cards {
     grid-template-columns: 1fr 1fr 40px 0  40px 1fr 1fr;
@@ -680,7 +614,6 @@ transition:  0.1s ease-in-out;
     display: none;
   }
 }
-
 @media screen and (max-width: 1078px) {
   header {
     grid-template-columns: 30px 1fr 4fr auto 30px;
@@ -698,7 +631,6 @@ transition:  0.1s ease-in-out;
     padding: 0.2rem;
   }
 }
-
 @media screen and (max-width: 1440px) {
   @support (display: grid) {
     .circle-img {
@@ -707,7 +639,6 @@ transition:  0.1s ease-in-out;
     }
   }
 }
-
 @media screen and (min-width: 657px) {
   #misja {
     padding: 4rem 6rem 4rem 6rem;
@@ -719,34 +650,31 @@ transition:  0.1s ease-in-out;
     font-size: 19px;
   }
 }
-
 @media screen and (min-width: 774px) {
   @supports not (display: grid) {
-      .gallery {
-        content: "";
-        clear: both;
-        display: table;
-        img {
-          width: 49%;
-        }
-        img:nth-child(even) {
-          float: right;
-        }
-        img:nth-child(odd) {
-          border: 1px dashed transparent;
-          float: left;
-        }
+    .gallery {
+      content: "";
+      clear: both;
+      display: table;
+      img {
+        width: 49%;
+      }
+      img:nth-child(even) {
+        float: right;
+      }
+      img:nth-child(odd) {
+        border: 1px dashed transparent;
+        float: left;
       }
     }
-}
-
-
-@media screen and (min-width: 1079px) {
-@supports not (display: grid) {
-  article {
-    padding: 0 20rem 1rem 20rem;
   }
 }
+@media screen and (min-width: 1079px) {
+  @supports not (display: grid) {
+    article {
+      padding: 0 20rem 1rem 20rem;
+    }
+  }
   #misja {
     padding: 5rem 18rem 5rem 18rem;
   }
@@ -800,7 +728,6 @@ transition:  0.1s ease-in-out;
     }
   }
 }
-
 @media screen and (min-width:  1414px) {
   #kontakt {
     padding-left: 15rem;
@@ -813,7 +740,6 @@ transition:  0.1s ease-in-out;
     }
   }
 }
-
 @media screen and (min-width:  1644px) {
   @supports (display: grid) {
     .gallery {
@@ -823,7 +749,6 @@ transition:  0.1s ease-in-out;
     }
   }
 }
-
 @media screen and (min-width:  1756px) {
   @supports (display: grid) {
     .tiles {
@@ -832,7 +757,6 @@ transition:  0.1s ease-in-out;
     }
   }
 }
-
 @media screen and (min-width:  1938px) {
   .container {
     max-width: 1750px;
