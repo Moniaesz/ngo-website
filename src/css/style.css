@@ -54,9 +54,10 @@ h2 {
 
 @supports (display: grid) {
   header {
-    margin-top: 2%;
+    padding-top: 2%;
     display: grid;
-    grid-template-columns: 150px 1fr 4fr auto 150px; }
+    grid-template-columns: 150px 1fr 4fr auto 150px;
+    grid-template-rows: 1fr auto; }
     header img {
       grid-column: 2 / 3;
       height: 130px;
@@ -66,12 +67,10 @@ h2 {
     align-items: center; } }
 
 @supports not (display: grid) {
-  header img {
-    height: 130px; } }
-
-@supports not (display: grid) {
   header {
     padding-top: 3rem; }
+    header img {
+      height: 130px; }
   nav {
     padding-top: 4rem; } }
 
@@ -100,9 +99,6 @@ li {
   font-size: 40px;
   display: none;
   color: #fff; }
-
-.color-menu {
-  color: fuchsia; }
 
 /*
 * === o-nas section  ===
@@ -460,13 +456,24 @@ article img {
     header {
       padding-top: 3%;
       display: grid; }
-    nav {
-      display: none; }
     .menu i {
       display: block;
       margin-top: 0.5rem; }
     .menu {
       grid-column: 4/5; } }
+  nav ul {
+    margin-top: -50rem;
+    display: flex;
+    flex-direction: column; }
+    nav ul li {
+      padding: 1.5rem; }
+  nav {
+    grid-row: 3 / -1;
+    grid-column: 1 / -1; }
+  .overlay {
+    transition: 0.5s ease-in-out;
+    background-image: url("../assets/green/mobile-bg.jpg");
+    height: 80vh; }
   header img {
     height: 90px; }
   h2 {
