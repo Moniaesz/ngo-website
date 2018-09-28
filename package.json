@@ -1,19 +1,28 @@
 {
-  "name": "2a_zielona_staroleka",
+  "name": "stowarzyszenie-zielona-staroleka",
   "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
+  "description": "Website was made for local NGO in city of Poznań, that supports preservation of green areas and watching over the reasonable infrastructure development in particular districts.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moniaesz/ngo-website.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moniaesz/ngo-website/issues"
+  },
+  "homepage": "https://github.com/Moniaesz/ngo-website#readme",
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.24.7",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1",
     "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1",
     "run-sequence": "^2.2.1"
   }
 }

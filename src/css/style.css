@@ -76,6 +76,7 @@ h2 {
     padding-top: 4rem; } }
 
 nav {
+  color: #fff;
   font-size: 19px;
   grid-column: 4 / 5;
   margin: 0 auto;
