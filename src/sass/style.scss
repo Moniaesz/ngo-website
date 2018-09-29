@@ -50,11 +50,6 @@ h2 {
   color: #fff;
   margin-top: 23vh;
 }
-@supports (display: grid) {
-  .container {
-  display: grid;
-  }
-}
 .container {
   text-align: center;
 }
@@ -63,6 +58,9 @@ h2 {
   height: 100vh;
 }
 @supports (display: grid) {
+  .container {
+  display: grid;
+  }
   header {
     padding-top: 2%;
     display: grid;
@@ -559,13 +557,13 @@ article img {
   }
 // mobile menu
   .menu {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     position: relative;
     text-align: left;
     .line {
       position: absolute;
-      height: 7px;
+      height: 5px;
       width: 100%;
       background: white;
       border-radius: 10px;
@@ -594,7 +592,6 @@ article img {
     top: 50%;
   }
   .overlay {
-    background-image: url("../assets/green/mobile-bg.jpg");
     height: 70vh;
      .nav {
       display: block;
@@ -621,7 +618,7 @@ article img {
   }
   header {
     img {
-      height: 90px;
+      height: 70px;
     }
   }
   h2 {
