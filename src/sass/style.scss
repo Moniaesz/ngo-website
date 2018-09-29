@@ -60,7 +60,7 @@ h2 {
 }
 #landing-page {
   background-image: url("../assets/green/dark-green.jpg");
-  height: 80vh;
+  height: 100vh;
 }
 @supports (display: grid) {
   header {
@@ -113,11 +113,6 @@ li {
     padding: 8px 0; 
     }
   }
-}
-.menu i {
-  font-size: 40px;
-  display: none;
-  color: #fff;
 }
 
 /*
@@ -555,31 +550,74 @@ article img {
       padding-top: 3%;
       display: grid;
     }
-    .menu i {
-      display: block;
-      margin-top: 0.5rem;
-    }
     .menu {
-      grid-column: 4/5
+      grid-column: 4/5;
     }
   }
+  #landing-page {
+    height: 70vh;
+  }
+// mobile menu
+  .menu {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    text-align: left;
+    .line {
+      position: absolute;
+      height: 7px;
+      width: 100%;
+      background: white;
+      border-radius: 10px;
+      transition: 0.2s ease-in-out;
+    }
+     .one {
+        top: 20%;
+      }
+     .two {
+        top: 50%;
+      }
+     .three {
+        top: 80%;
+      }
+  }
+  .menu.open .one {
+    transform:rotate(45deg);
+    top: 50%;
+  }
+  .menu.open .two {
+    transform:rotate(-45deg);
+    top: 50%;
+  }
+  .menu.open .three {
+    transform:rotate(45deg);
+    top: 50%;
+  }
+  .overlay {
+    background-image: url("../assets/green/mobile-bg.jpg");
+    height: 70vh;
+     .nav {
+      display: block;
+     }
+  }
+// nav
+  nav {
+    display: none;
+  }
   nav ul {
-    margin-top: -50rem;
+    margin-top: -22rem;
     display: flex;
     flex-direction: column;
     li {
       padding: 1.5rem;
+      &:first-child {
+        margin-top: 7rem;
+      }
     }
   }
   nav {
     grid-row: 3 / -1;
     grid-column: 1 / -1;
-  }
-  .overlay {
-    transition: 0.5s ease-in-out;
-      background-image: url("../assets/green/mobile-bg.jpg");
-    // opacity: 0.6;
-    height: 80vh;
   }
   header {
     img {
@@ -588,6 +626,7 @@ article img {
   }
   h2 {
     font-size: 30px;
+    margin-top: 15vh;
   }
   // o-nas section
     article {

@@ -4,15 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const menu = header.getElementsByClassName("menu")[0];
     function showOverlay() {
         header.classList.toggle("overlay");
+        menu.classList.toggle("open");
     }
 
-    console.log(menu);
-    console.log(header);
-
-    header.add
-
     menu.addEventListener("click", function() {
-        console.log('click');
         showOverlay();
     });
 

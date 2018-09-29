@@ -50,7 +50,7 @@ h2 {
 
 #landing-page {
   background-image: url("../assets/green/dark-green.jpg");
-  height: 80vh; }
+  height: 100vh; }
 
 @supports (display: grid) {
   header {
@@ -94,11 +94,6 @@ li {
       text-decoration: none;
       border-bottom: 2px solid #fff;
       padding: 8px 0; }
-
-.menu i {
-  font-size: 40px;
-  display: none;
-  color: #fff; }
 
 /*
 * === o-nas section  ===
@@ -456,28 +451,60 @@ article img {
     header {
       padding-top: 3%;
       display: grid; }
-    .menu i {
-      display: block;
-      margin-top: 0.5rem; }
     .menu {
       grid-column: 4/5; } }
+  #landing-page {
+    height: 70vh; }
+  .menu {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    text-align: left; }
+    .menu .line {
+      position: absolute;
+      height: 7px;
+      width: 100%;
+      background: white;
+      border-radius: 10px;
+      transition: 0.2s ease-in-out; }
+    .menu .one {
+      top: 20%; }
+    .menu .two {
+      top: 50%; }
+    .menu .three {
+      top: 80%; }
+  .menu.open .one {
+    transform: rotate(45deg);
+    top: 50%; }
+  .menu.open .two {
+    transform: rotate(-45deg);
+    top: 50%; }
+  .menu.open .three {
+    transform: rotate(45deg);
+    top: 50%; }
+  .overlay {
+    background-image: url("../assets/green/mobile-bg.jpg");
+    height: 70vh; }
+    .overlay .nav {
+      display: block; }
+  nav {
+    display: none; }
   nav ul {
-    margin-top: -50rem;
+    margin-top: -22rem;
     display: flex;
     flex-direction: column; }
     nav ul li {
       padding: 1.5rem; }
+      nav ul li:first-child {
+        margin-top: 7rem; }
   nav {
     grid-row: 3 / -1;
     grid-column: 1 / -1; }
-  .overlay {
-    transition: 0.5s ease-in-out;
-    background-image: url("../assets/green/mobile-bg.jpg");
-    height: 80vh; }
   header img {
     height: 90px; }
   h2 {
-    font-size: 30px; }
+    font-size: 30px;
+    margin-top: 15vh; }
   article {
     grid-template-columns: repeat(1, 1fr); }
   @supports (display: grid) {
