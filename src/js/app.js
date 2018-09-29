@@ -11,4 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
         showOverlay();
     });
 
+    document.querySelector('.nav').addEventListener('click', function(event) {
+      if(event.target.tagName.toLowerCase() === 'a') {
+        showOverlay();
+    }
+  });
 });
