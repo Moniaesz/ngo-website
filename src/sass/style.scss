@@ -410,7 +410,7 @@ article img {
       border-radius: 10px;
       display: block;
       content: '';
-      height: 7px;
+      height: 4px;
       background: linear-gradient(to var(--direction, left), $grassGreen, transparent);
     }
     &:after {
@@ -446,9 +446,16 @@ article img {
   color: #d8d8d6;
   line-height: 2rem;
   font-size: 17px;
-  img {
-    height: 110px;
-    opacity: 0.9;
+  .dane {
+    img {
+      height: 110px;
+      opacity: 0.9;
+    }
+  }
+  p {
+    img {
+      height: 40px;
+    }
   }
   i {
     transition:  0.2s ease-in-out;

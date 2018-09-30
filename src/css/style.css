@@ -349,7 +349,7 @@ article img {
       border-radius: 10px;
       display: block;
       content: '';
-      height: 7px;
+      height: 4px;
       background: linear-gradient(to var(--direction, left), #69801F, transparent); }
     h4:after {
       --direction: right; } }
@@ -376,9 +376,11 @@ article img {
   color: #d8d8d6;
   line-height: 2rem;
   font-size: 17px; }
-  #kontakt img {
+  #kontakt .dane img {
     height: 110px;
     opacity: 0.9; }
+  #kontakt p img {
+    height: 40px; }
   #kontakt i {
     transition: 0.2s ease-in-out;
     font-size: 45px;
