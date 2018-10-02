@@ -54,7 +54,9 @@ h2 {
   text-align: center;
 }
 #landing-page {
-  background-image: url("../assets/green/dark-green.jpg");
+  background-image: url("../assets/green/leaves-bg-2.jpg");
+  background-repeat: np-repeat;
+  background-size: cover;
   height: 100vh;
 }
 @supports (display: grid) {
@@ -68,7 +70,7 @@ h2 {
     grid-template-rows: 1fr auto;
     img {
       grid-column: 2 / 3;
-      height: 130px;
+      height: 140px;
       border-radius: 5%;
     }
   }
@@ -81,7 +83,7 @@ h2 {
   header {
     padding-top: 3rem;
     img {
-      height: 130px;
+      height: 140px;
     }
   }
   nav {
@@ -465,11 +467,8 @@ article img {
       color: $grassGreen;
     }
   }
-  p {
-    margin-top: 0.3rem;
-    &:last-child {
-      margin-top: 0;
-    }
+  p:nth-child(3) {
+    margin-top: 0;
   }
 }
 #small-footer {
@@ -625,7 +624,7 @@ article img {
   }
   header {
     img {
-      height: 70px;
+      height: 85px;
     }
   }
   h2 {
