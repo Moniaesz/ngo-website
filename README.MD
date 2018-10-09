@@ -4,6 +4,9 @@ Website was made for local NGO in city of Poznań, that supports preservation of
 
 I designed layout views (desktop, table, mobile) with Adobe Xd.
 
+![style guide](readme-img/style-guide.jpg)
+![style guide](readme-img/layouts.jpg)
+
 Site was build with CSS Grid Layout, with fallback for older browsers with no grid support (feature queries).
 
 #### Page content
