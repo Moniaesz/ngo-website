@@ -6,8 +6,7 @@ $lightdarkGreen: #233a0e;
 $darkGreen: #202E21;
 $lightGrey: #F9F9F3;
 $lightBlack: #262626;
-
-$boxShadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$boxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 /*
 * === general styles ===
@@ -58,6 +57,7 @@ h2 {
   background-repeat: np-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
 @supports (display: grid) {
   .container {
@@ -113,6 +113,9 @@ li {
     padding: 8px 0; 
     }
   }
+}
+.arrow img {
+  display: none;
 }
 
 /*
@@ -668,6 +671,21 @@ article img {
       font-size: 20px;
       grid-gap: 6px;
     }
+  }
+}
+
+@media screen and (min-width: 836px) {
+  .arrow img {
+    display: inline-block;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 836px) and (max-width: 1134px) {
+  .tile {
+    padding: 2rem 1rem;
   }
 }
 @media screen and (max-width: 980px) {

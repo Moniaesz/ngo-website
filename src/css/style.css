@@ -48,7 +48,8 @@ h2 {
   background-image: url("../assets/green/leaves-bg-2-min.jpg");
   background-repeat: np-repeat;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
 
 @supports (display: grid) {
   .container {
@@ -95,6 +96,9 @@ li {
       border-bottom: 2px solid #fff;
       padding: 8px 0; }
 
+.arrow img {
+  display: none; }
+
 /*
 * === o-nas section  ===
 */
@@ -123,7 +127,7 @@ article img {
 .tile {
   padding: 3rem;
   padding-top: 1rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: 1px solid #e6e4e4;
   margin: 1.5rem;
   border-radius: 10px;
@@ -280,7 +284,7 @@ article img {
     grid-column: 3 / 6;
     grid-row: 2 / 5;
     border-radius: 50%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); } }
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); } }
 
 @supports not (display: grid) {
   .info-cards {
@@ -306,7 +310,7 @@ article img {
   background-color: #F9F9F3;
   border-radius: 20px;
   transition: 0.2s ease-in-out;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .info-cards-tile:hover {
     background-color: #233a0e;
     color: #F9F9F3;
@@ -522,6 +526,18 @@ article img {
     grid-template-columns: auto 15rem auto;
     font-size: 20px;
     grid-gap: 6px; } }
+
+@media screen and (min-width: 836px) {
+  .arrow img {
+    display: inline-block;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem; } }
+
+@media screen and (min-width: 836px) and (max-width: 1134px) {
+  .tile {
+    padding: 2rem 1rem; } }
 
 @media screen and (max-width: 980px) {
   .info-cards {
