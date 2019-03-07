@@ -151,7 +151,8 @@ article img {
 
 .banner {
   height: 30rem;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .banner-content h3 {
   padding-bottom: 2rem;
